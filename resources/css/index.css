@@ -1,12 +1,45 @@
 * {
-  font-family: Helvetica, Arial, sans-serif;
+ font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
   color: SeaGreen;
+  height: 60px;
 }
 
 p,
 li {
   font-size: 18 px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 60px;
+}
+
+.navbar .pagelinks li {
+  display: inline-block;
+  padding: 10px;
+  float: left;
+}
+
+.navbar .pagelinks a {
+  color: #4A4A4A;
+}
+
+a.home {
+  color: #4D00FF;
+}
+
+.navbar .medialinks li {
+  display: inline-block;
+  padding: 10px;
+  float: right;
 }
