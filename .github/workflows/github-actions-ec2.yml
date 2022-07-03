@@ -35,4 +35,7 @@ steps:
       REMOTE_HOST: ${{ secrets.HOST_DNS }}
       REMOTE_USER: ${{ secrets.USERNAME }}
       TARGET: ${{ secrets.TARGET_DIR }}
+<<<<<<< HEAD
+>>>>>>> 5206bec18dd3a41b11986f693f11ca8f246aff1e
+=======
 >>>>>>> 5206bec18dd3a41b11986f693f11ca8f246aff1e
