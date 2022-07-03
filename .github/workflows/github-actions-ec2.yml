@@ -8,7 +8,11 @@ on:
 
 jobs:
   deploy:
+<<<<<<< HEAD
     name: Deploy to EC2 on main branch push
+=======
+    name: Deploy to EC2
+>>>>>>> adding github actions
     runs-on: ubuntu-latest
 
 steps:
@@ -16,9 +20,18 @@ steps:
     uses: actions/checkout@v2
   
   - name: Deploy to Server 1
+<<<<<<< HEAD
     uses: easingthemes/ssh-deploy@v2.1.5
     env:
       SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
       REMOTE_HOST: ${{ secrets.HOST_DNS }}
       REMOTE_USER: ${{ secrets.USERNAME }}
       TARGET: ${{ secrets.TARGET_DIR }}
+=======
+    uses: easingthemes/ssh-deploy@main
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY  }}
+      REMOTE_HOST: ${{ secrets.HOST_DNS }}
+      REMOTE_USER: ${{ secrets.USERNAME}}
+      TARGET: ${{ secrets.TARGET_DIR}}
+>>>>>>> adding github actions
