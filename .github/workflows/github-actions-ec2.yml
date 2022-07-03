@@ -11,19 +11,6 @@ jobs:
     name: Deploy to EC2 on main branch push
     runs-on: ubuntu-latest
 
-<<<<<<< HEAD
-    steps:
-      - name: Checkout the files
-        uses: actions/checkout@v2
-      
-      - name: Deploy to Server 1
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}
-=======
 steps:
   - name: Checkout the files
     uses: actions/checkout@v2
@@ -35,7 +22,3 @@ steps:
       REMOTE_HOST: ${{ secrets.HOST_DNS }}
       REMOTE_USER: ${{ secrets.USERNAME }}
       TARGET: ${{ secrets.TARGET_DIR }}
-<<<<<<< HEAD
->>>>>>> 5206bec18dd3a41b11986f693f11ca8f246aff1e
-=======
->>>>>>> 5206bec18dd3a41b11986f693f11ca8f246aff1e
