@@ -26,7 +26,7 @@ jobs:
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER}}@{{ secrets.SSH_HOST }}:/var/www/html/
 
       - name: Restart Server 
-        uses: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@master
         with:
           HOST: ${{ secrets.SSH_HOST }}
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
